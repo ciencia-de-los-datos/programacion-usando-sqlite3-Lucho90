@@ -22,3 +22,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+res3= cur.execute("SELECT * FROM data ORDER BY C14 LIMIT 5"
+ ).fetchall()
+
+res3=pd.DataFrame(res3,index=None)
+res3.columns =['R','k0','k1','c12','c13','c14','c15','c16']

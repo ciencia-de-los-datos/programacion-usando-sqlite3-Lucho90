@@ -43,3 +43,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+res6= cur.execute("SELECT * FROM tbl1 WHERE K0 = 'A' ORDER BY c14"
+ ).fetchall()
+
+res6=pd.DataFrame(res6,index=None)
+res6.columns =['R', 'K0','K1','c12','c13','c14','c15','c16']

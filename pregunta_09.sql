@@ -38,3 +38,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+res9= cur.execute("SELECT * FROM tbl2 ORDER BY c21 LIMIT 1"
+ ).fetchall()
+
+res9=pd.DataFrame(res9,index=None)
+res9.columns =['R', 'K0','c21','c22','c23','c24','c25']

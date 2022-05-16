@@ -40,3 +40,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+res3= cur.execute("SELECT K0, c16 FROM tbl1 WHERE K0 = SUBSTR(c16,1,1)"
+ ).fetchall()
+
+res3=pd.DataFrame(res3,index=None)
+res3.columns =['k0', 'c16']

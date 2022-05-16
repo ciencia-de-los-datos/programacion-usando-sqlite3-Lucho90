@@ -42,3 +42,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+res10= cur.execute("SELECT * FROM tbl0 WHERE c02 >= 300"
+ ).fetchall()
+
+res10=pd.DataFrame(res10,index=None)
+res10.columns =['R', 'K0','c01','c02','c03','c04']
