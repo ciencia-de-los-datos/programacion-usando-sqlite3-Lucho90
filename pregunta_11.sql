@@ -38,8 +38,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-res11= cur.execute("SELECT STRFTIME('%Y',c14)AS YEAR,COUNT(*) AS CANT FROM tbl1 "
- ).fetchall()
-
-res11=pd.DataFrame(res11,index=None)
-res11.columns =["YEAR","CANT"]
+SELECT STRFTIME('%Y',c14)AS YEAR,COUNT(*) AS CANT FROM tbl1 

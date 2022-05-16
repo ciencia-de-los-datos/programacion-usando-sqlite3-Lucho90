@@ -41,8 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-res5= cur.execute("SELECT * FROM tbl0 WHERE c02 = 100 OR c02 = 600"
- ).fetchall()
-
-res5=pd.DataFrame(res5,index=None)
-res5.columns =['R', 'K0','c01','c02','c03','c04']
+SELECT * FROM tbl0 WHERE c02 = 100 OR c02 = 600

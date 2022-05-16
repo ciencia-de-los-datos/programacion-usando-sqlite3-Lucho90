@@ -18,8 +18,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-res2= cur.execute("SELECT COUNT(*) FROM data"
- ).fetchall()
+SELECT COUNT(*) FROM data
 
-res2=pd.DataFrame(res2,index=None)
-res2.columns =['COUNT(*)']

@@ -41,6 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-res8= cur.execute('SELECT STRFTIME("%Y","c23") AS YEAR, AVG(c21) AS avg FROM tbl2 GROUP BY YEAR').fetchall()
-res8=pd.DataFrame(res8, index=None)
-res8.columns =["YEAR","avg(c21)"]
+SELECT STRFTIME("%Y","c23") AS YEAR, AVG(c21) AS avg FROM tbl2 GROUP BY YEAR

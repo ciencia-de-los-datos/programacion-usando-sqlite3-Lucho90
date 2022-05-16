@@ -43,8 +43,4 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-res7= cur.execute("SELECT * FROM tbl1 WHERE K0 != 'A' AND K0 != 'B' AND c13 != 200 AND c13 != 900 ORDER BY c14"
- ).fetchall()
-
-res7=pd.DataFrame(res7,index=None)
-res7.columns =['R', 'K0','K1','c12','c13','c14','c15','c16']
+SELECT * FROM tbl1 WHERE K0 != 'A' AND K0 != 'B' AND c13 != 200 AND c13 != 900 ORDER BY c14

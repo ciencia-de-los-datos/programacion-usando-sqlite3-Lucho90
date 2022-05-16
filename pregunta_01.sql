@@ -17,8 +17,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-res1= cur.execute("SELECT SUM(c12) FROM data"
- ).fetchall()
+SELECT SUM(c12) FROM data
 
-res1=pd.DataFrame(res1,index=None)
-res1.columns =['SUM(C12)']
+

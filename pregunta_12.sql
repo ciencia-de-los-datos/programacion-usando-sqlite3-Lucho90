@@ -42,8 +42,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-res12= cur.execute("SELECT K0, MAX(c12), MIN(c12) FROM tbl1 GROUP BY K0 "
- ).fetchall()
-
-res12=pd.DataFrame(res12,index=None)
-res12.columns =["K0","MAX(c12)","min(c12)"]
+SELECT K0, MAX(c12), MIN(c12) FROM tbl1 GROUP BY K0 

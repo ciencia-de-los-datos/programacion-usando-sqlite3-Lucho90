@@ -43,8 +43,4 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-res13= cur.execute("SELECT K0, AVG(c12) FROM tbl1 WHERE c13 > 400 GROUP BY K0 "
- ).fetchall()
-
-res13=pd.DataFrame(res13,index=None)
-res13.columns =["K0","avg(c12)"]
+SELECT K0, AVG(c12) FROM tbl1 WHERE c13 > 400 GROUP BY K0 
