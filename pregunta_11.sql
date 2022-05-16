@@ -38,3 +38,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT STRFTIME('%Y',c14)AS YEAR,COUNT(*) AS CANT FROM tbl1 
